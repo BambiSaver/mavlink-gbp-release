@@ -1672,20 +1672,22 @@
         <param index="6">Empty</param>
         <param index="7">Empty</param>
       </entry>
+
       <!--              BEGIN
       Custom message definition for Bambi Saver --> 
       <entry value="2720" name="MAV_CMD_BAMBI_START_STOP_MISSION">
-        <description>Request to start/stop Bambi mission</description>
+        <description>Request to start/stop Bambi mission: it also contain the coordinate of the first mission point</description>
         <param index="1">Trigger Mission (0: stop, 1: start)</param>
-        <param index="2">Empty</param>
-        <param index="3">Empty</param>
-        <param index="4">Empty</param>
+        <param index="2">Latitude  (WGS84)</param>
+        <param index="3">Longitude (WGS84)</param>
+        <param index="4">Altitude (relative to ground)</param>
         <param index="5">Empty</param>
         <param index="6">Empty</param>
         <param index="7">Empty</param>
       </entry>
-      <!--              END
-      Custom message definition for Bambi Saver -->
+      <!-- Custom message definition for Bambi Saver
+                          ENDS                       -->
+
       <entry value="2800" name="MAV_CMD_PANORAMA_CREATE">
         <description>Create a panorama at the current position</description>
         <param index="1">Viewing angle horizontal of the panorama (in degrees, +- 0.5 the total angle)</param>
