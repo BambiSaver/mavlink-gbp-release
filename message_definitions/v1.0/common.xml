@@ -1678,12 +1678,12 @@
       <entry value="2720" name="MAV_CMD_BAMBI_START_STOP_MISSION">
         <description>Request to start/stop Bambi mission: it also contain the coordinate of the first mission point</description>
         <param index="1">Trigger Mission (0: stop, 1: start)</param>
-        <param index="2">Latitude  (WGS84)</param>
-        <param index="3">Longitude (WGS84)</param>
-        <param index="4">Altitude (relative to ground)</param>
-        <param index="5">Empty</param>
-        <param index="6">Empty</param>
-        <param index="7">Empty</param>
+        <param index="2">AltitudeTO (in meters, relative to home)</param>
+        <param index="3">Latitude of orthophoto (WGS84)</param>
+        <param index="4">Longitude of orthophoto (WGS84)</param>
+        <param index="5">Altitude of orthophoto (in meters AMSL)</param>
+        <param index="6">Altitude of scanning (in meters, relative to ground)</param>
+        <param index="7">Sensor Footprint min Dimension (in meters)</param>
       </entry>
       <!-- Custom message definition for Bambi Saver
                           ENDS                       -->
